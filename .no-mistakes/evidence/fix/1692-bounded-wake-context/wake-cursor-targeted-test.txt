@@ -1,0 +1,1 @@
+ok - status cursor is staged before ACK publication and commits without replay

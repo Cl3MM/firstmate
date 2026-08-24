@@ -1,0 +1,8 @@
+baseline_parent ack_visible=yes staged_cursor_when_ack_visible=no
+baseline_parent staged_cursor_after_presentation=yes
+target_head ack_visible=yes staged_cursor_when_ack_visible=yes
+target_head ack_command="--ack-through 1 --recovery-generation 46962.1787590769.mJJPIm"
+target_head presented_status=yes
+target_head durable_cursor_advanced_after_ack=yes
+target_head handled_status_replayed_after_ack=no
+target_head staged_cursor_removed_after_commit=yes
