@@ -1,0 +1,25 @@
+measure - wake_context_executable_invocations=1 packet_bytes=1271
+ok - wake context is one bounded complete adapter presentation
+ok - packet byte bound counts UTF-8 bytes rather than characters
+ok - real drain presentation and replay preserve unread status and divergence
+ok - SIGKILL before cache publication leaves the durable wake replayable
+ok - status cursor is staged before ACK publication and commits without replay
+ok - nonmutating drain withholds ACK when status presentation cannot be staged
+ok - empty queue withholds ACK when status presentation cannot be staged
+ok - empty status set stages an explicit empty cursor before ACK
+ok - wake context overflow falls back before durable presentation
+ok - stale endpoint wake includes the affected task
+ok - wake packet bounds unread-status projection with an omission count
+ok - absolute check keys include their task context
+ok - status-only recovery preserves its zero acknowledgement
+ok - post-drain queue snapshot still enforces wake cardinality
+ok - backend liveness timeout stays strictly positive after normalization
+ok - collection timeout accepts leading-zero decimal values
+ok - le drain partage la borne agrégée et retombe avant présentation
+ok - une sonde crew-state bloquée respecte le délai agrégé et le fallback
+ok - plusieurs sondes crew-state partagent une borne agrégée
+ok - cursor merge follows a live rotation without replaying stale state
+ok - post-presentation failure preserves the human acknowledgement without re-drain
+ok - UTF-8 fallback acknowledgement commits its unread cursor exactly once
+ok - manual drain supersedes stale fallback state before presenting large status
+ok - resolved status is already non-actionable on the primary
