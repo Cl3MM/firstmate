@@ -1,0 +1,10 @@
+target=f69bc8a58af5e6171a87581d43af90d9a1dd8489
+SCENARIO queue=nonempty identity=invalidated
+first_exit=1 ack_published=no cursor_advanced=no staged_cursor_left=no queue_preserved=yes
+retry_status_visible=yes retry_ack=--ack-through_1_--recovery-generation_15649.1787614771.27ss0J
+post_ack_replayed=no
+
+SCENARIO queue=empty identity=invalidated
+first_exit=1 ack_published=no cursor_advanced=no staged_cursor_left=no queue_empty=yes
+retry_status_visible=yes retry_ack=--ack-through_0_--recovery-generation_fixture
+post_ack_replayed=no
