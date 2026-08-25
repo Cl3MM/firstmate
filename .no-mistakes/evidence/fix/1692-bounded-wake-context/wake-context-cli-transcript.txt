@@ -1,0 +1,22 @@
+wake-context end-user CLI evidence
+commit=3e6049a8def3846734030474c276f851ce1b41c0
+
+[1] default-off, no published transaction
+exit=3 instruction_lines=1
+WAKE_CONTEXT_FALLBACK: wake context unavailable before presentation: automatic wake context is disabled until config/wake-context-presentation exists; run bin/fm-wake-drain.sh once.
+queue_sha_before=bed6463b275d86c856893ccee145e5759f4be3f37497e2763aa34a10070a4f3e
+queue_sha_after =bed6463b275d86c856893ccee145e5759f4be3f37497e2763aa34a10070a4f3e cmp=identical
+drain=absent cache=absent staged_cursor=absent receipt=absent ack_lines=0
+
+[2] opt-in publishes a staged transaction
+cache=present staged_cursor=present durable_cursor_cmp_before=identical
+packet_has_beta_note=true
+
+[3] opt-out after publication replays byte-identically
+first_sha =72c9b2970a88f1a73aa239b509d924f74bd49dfe1982d2f316bfc53453627ee0
+replay_sha=72c9b2970a88f1a73aa239b509d924f74bd49dfe1982d2f316bfc53453627ee0 cmp=identical
+
+[4] exact ACK commits cursor and retires transaction
+ack_through=1 recovery_generation=88469.1787635790.qO0XVK
+durable_cursor_cmp_before=advanced cache=absent staged_cursor=absent
+next_drain_replays_beta_note=no
